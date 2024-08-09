@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Voto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #146b08;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+       
+
+        select {
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px 10px;
+            background-color: #68ca18;
+            color: white;
+            border: none;
+            border-radius: 1px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #20b613;
+        }
+
+        #resultado {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Votación de Sección</h1>
+    <form id="votoForm">
+        <select id="seccion" name="seccion">
+            <option value="norte">Norte</option>
+            <option value="sur">Sur</option>
+            <option value="centro">Centro</option>
+        </select>
+        <button type="submit">Votar</button>
+    </form>
+    <div id="resultado"></div>
+    <script src="funcion.js"></script>
+</body>
+</html>
